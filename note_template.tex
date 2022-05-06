@@ -1,0 +1,142 @@
+\documentclass{article}
+\usepackage{ctex}   % show Chinese
+\usepackage{geometry}
+\geometry{a4paper,centering,scale=0.8}
+\usepackage{newtxtext}
+\usepackage[dvipsnames,svgnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+  colorlinks,
+  citecolor=violet,
+  linkcolor=blue,
+  urlcolor=blue}
+
+% insert code
+\usepackage{listings}  
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+% insert figures
+\usepackage{graphicx}
+\usepackage{subcaption}  % subfigure
+\usepackage{caption}
+
+
+
+\title{title}
+\author{author}
+
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+% \newpage
+
+\section{section1}
+引用 \cite{tuszewski1988field}。
+
+公式:
+\begin{equation}
+\bar{s} = \int_{r_o}^{r_s} \frac{r}{r_s \rho_i}   dr
+\end{equation}
+
+行内公式: $\bar{s}<2$, $r_o$。
+
+
+
+itemize:
+\begin{itemize}
+\item item1
+\item item2
+\item item3
+\end{itemize}
+
+
+
+双图:
+\begin{figure}[!hbtp]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{figs/tilt.png} 
+    \caption{evolution of density contours for the tilt mode}
+    \label{fig: tilt}
+    \end{subfigure}
+    \hfill % this is very important!!!
+    \begin{subfigure}[b]{0.45\textwidth}
+    \centering
+    \includegraphics[width=0.9\textwidth]{figs/mushroom.png}
+    \caption{evolution of density contours for the mushroom mode}
+    \label{fig: mushroom}
+    \end{subfigure}
+    \caption{FRC中的倾斜模和蘑菇模\cite{staudenmeier1991fluid}}
+    \label{fig: tilt and mushroom}
+\end{figure}
+
+
+
+\subsection{section 2}
+
+
+
+\subsection{subsection}
+
+词语带有网页链接, 比如: \href{https://zh.wikipedia.org/wiki/%E7%A3%81%E7%9F%A9}{磁力矩}。
+
+
+插入单栏图片: 
+\begin{figure}[!hbtp]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figs/ctilt.png} 
+    \caption{Size parameter vs separatrix elongation for elongated FRCs\cite{steinhauer2011review}}
+    \label{fig: cgyro}
+\end{figure}
+
+插入表格: 
+\begin{table}[!hbtp]
+    \centering
+    \begin{tabular}{lllll}
+    \hline
+    type & 1 & 2 & 3 & 4 \\ \hline
+    1    & 2 & 3 & 4 & 5 \\ \hline
+    1    & 2 & 3 & 4 & 5 \\ \hline
+    1    & 2 & 3 & 4 & 5 \\ \hline
+    \end{tabular}
+\end{table}
+
+
+
+% 参考文献
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+
+
+
+
+
+\end{document}
