@@ -1,0 +1,8 @@
+*.*
+*
+!*.tex
+!figs/
+!figs/*
+!*.bib
+!*.py
+!.gitignore
