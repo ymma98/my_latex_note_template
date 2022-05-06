@@ -1,6 +1,7 @@
 *.*
 *
 !*.tex
+!.pdf
 !figs/
 !figs/*
 !*.bib
