@@ -75,6 +75,48 @@ itemize:
 \item item3
 \end{itemize}
 
+% 配色方案: https://zhuanlan.zhihu.com/p/336171630
+% 以及: https://zhuanlan.zhihu.com/p/472540719
+测试 box:
+\begin{tcolorbox}
+    [colback = Emerald!10, colframe = cyan!40!black, 
+    title = title here]
+    测试测试测试
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=OliveGreen!10,colframe=Green!70,
+    title=title here]
+    测试测试测试
+    \begin{equation}
+        a = \int \cos(x) dx
+    \end{equation}
+\end{tcolorbox}
+
+
+\begin{tcolorbox}[colback=red!5,colframe=red!75!black,
+    title = title here
+    ]
+    测试测试测试
+\end{tcolorbox}
+
+\begin{tcolorbox}
+    [colback=Salmon!20, colframe=Salmon!90!Black,
+    title = title here
+    ]
+    测试测试测试
+\end{tcolorbox}
+
+\begin{tcolorbox}
+    [colback=Salmon!20, colframe=Salmon!90!Black
+    ]
+    测试没有title
+\end{tcolorbox}
+
+
+
+测试code:
+\lstinputlisting[language=Python]{./example.py}
 
 
 双图:
