@@ -53,6 +53,27 @@
 % use this package to support & 
 \usepackage{amsmath}
 
+
+% use 4th order section
+% https://tex.stackexchange.com/questions/427836/create-new-subsubsubsection-in-custom-class-file
+\makeatletter
+%same as \subsubsection but level 4
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}%
+                                     {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                     {1.5ex \@plus .2ex}%
+                                     {\normalfont\normalsize\bfseries}}
+% number \paragraph
+\setcounter{secnumdepth}{4}
+
+\makeatother
+
+
+
+
+
+
+
+
 \title{title}
 \author{author}
 
