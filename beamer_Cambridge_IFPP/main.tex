@@ -1,0 +1,85 @@
+\documentclass[xcolor=svgnames,serif,table,10pt]{beamer}
+\usepackage[UTF8,noindent]{ctexcap}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{listings}
+\usepackage{xcolor}
+%\usepackage{enumitem}
+\usepackage{amsmath,amssymb}
+\usepackage{enumerate}
+%\setmainfont{Arial}
+\setmainfont{Times New Roman}
+%\usetheme{Singapore}
+%\usetheme{Madrid}
+%\usetheme{AnnArbor}
+\usetheme{Antibes}
+\usecolortheme{beaver}
+%\usetheme{Marburg}
+\usepackage{amstext}
+\usepackage{indentfirst}
+\setlength{\parindent}{2em} 
+\usepackage{harpoon}
+\usepackage{subfigure}%并排
+\setbeamertemplate{navigation symbols}{}
+\pgfdeclareimage[width=1cm]{mylogo}{./IFPP.png}
+\setbeamertemplate{footline}{%
+	\hbox{%
+		\begin{beamercolorbox}[wd=0.333\paperwidth,ht=2.0ex,dp=1.125ex,leftskip=0.0cm,rightskip=0.3cm]{author in head/foot}
+			\pgfuseimage{mylogo}
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=0.333\paperwidth,ht=2.0ex,dp=1.125ex,leftskip=0.3cm,rightskip=0.3cm]{author in head/foot}
+			\insertshorttitle[width=0.333\paperwidth,center]
+		\end{beamercolorbox}%
+		\begin{beamercolorbox}[wd=0.333\paperwidth,ht=2.0ex,dp=1.125ex,leftskip=0.3cm,rightskip=0.3cm]{author in head/foot}
+			\hfill \insertshortauthor (HUST)  \qquad\insertframenumber\, /\,\inserttotalframenumber  
+		\end{beamercolorbox}
+	}
+}
+\begin{document}
+	\title{title}
+	\institute{institute\\
+		sub-institute}
+	\author{author}
+	
+	\date{date}
+	
+\begin{frame}
+		\titlepage
+\end{frame}
+\begin{frame}{目录}
+	\tableofcontents
+\end{frame}
+\section{sec}
+
+\begin{frame}{xxx}
+	\begin{itemize}
+		\item xxx
+		~\\
+		~\\
+		\item xxx
+
+	\end{itemize}
+\end{frame}
+\section{section}
+
+
+\subsection{subsection}
+\begin{frame}{frame title}
+	\begin{equation*}
+		q(r)= abc
+	\end{equation*}
+	
+	
+\end{frame}
+
+\begin{frame}{title}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\linewidth]{image/compared}
+		\label{fig:c}
+	\end{figure}
+	内容...
+\end{frame}
+
+\end{document}
