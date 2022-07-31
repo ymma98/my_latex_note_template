@@ -54,6 +54,9 @@
 \usepackage{amsmath}
 
 
+
+\usepackage[titletoc]{appendix}
+
 % use 4th order section
 % https://tex.stackexchange.com/questions/427836/create-new-subsubsubsection-in-custom-class-file
 \makeatletter
@@ -89,6 +92,17 @@
 
 \include{ch1}
 % 参考文献
+
+\begin{appendices}
+% \appendixpage
+\noappendicestocpagenum
+\addappheadtotoc
+
+\chapter{appendixA}
+Some text
+\end{appendices}
+
+
 \bibliographystyle{IEEEtran}
 \bibliography{references}
 
